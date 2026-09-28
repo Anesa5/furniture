@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Furn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p>100 night trial on every bed and sofa</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-box">FU<br>RN</div>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+
+                <!-- SHOP DROPDOWN -->
+                <div class="nav-item dropdown">
+                    <a href="shop.html">Shop <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All furniture</a>
+                        <a href="shop.html?c=sofa">Sofas</a>
+                        <a href="shop.html?c=chair">Chairs</a>
+                        <a href="shop.html?c=table">Tables</a>
+                        <a href="shop.html?c=bed">Beds</a>
+                        <a href="shop.html?c=lighting">Lighting</a>
+                        <a href="shop.html?c=decor">Decor</a>
+                    </div>
+                </div>
+
+                <a href="product.html">Product</a>
+
+                <!-- BLOG DROPDOWN -->
+                <div class="nav-item dropdown">
+                    <a href="blog.html" class="active">Blog <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">All posts</a>
+                        <a href="blog-single.html">Single post</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-icons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-bag"></i>
+                <i class="fa fa-bars" id="menuBtn"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- BLOG HERO -->
+    <section class="blog-hero">
+        <div class="shop-hero-overlay"></div>
+        <div class="container shop-hero-content">
+            <h1>BLOG</h1>
+            <p>Home / Blog</p>
+        </div>
+    </section>
+
+    <!-- BLOG LIST -->
+    <section class="section blog-list">
+        <div class="container">
+            <div class="blog-grid">
+
+                <!-- Post 1 -->
+                <article class="blog-card">
+                    <a href="blog-single.html">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80" alt="Blog 1">
+                    </a>
+                    <div class="blog-body">
+                        <span class="blog-date">14 AUGUST 2026 · GUIDES</span>
+                        <h3><a href="blog-single.html">HOW TO MEASURE A ROOM BEFORE YOU BUY A SOFA</a></h3>
+                        <p>Doorways, turning circles and the 60cm nobody accounts for. Measure once like this and the
+                            delivery day gets a lot calmer.</p>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card">
+                    <a href="blog-single.html">
+                        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=600&q=80" alt="Blog 2">
+                    </a>
+                    <div class="blog-body">
+                        <span class="blog-date">31 JULY 2026 · MATERIALS</span>
+                        <h3><a href="blog-single.html">SOLID WOOD VERSUS VENEER, AND WHEN EACH IS THE RIGHT CALL</a>
+                        </h3>
+                        <p>Veneer is not a shortcut and solid wood is not always better. What actually changes across a
+                            decade of use.</p>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card">
+                    <a href="blog-single.html">
+                        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&q=80" alt="Blog 3">
+                    </a>
+                    <div class="blog-body">
+                        <span class="blog-date">12 JULY 2026 · CARE</span>
+                        <h3><a href="blog-single.html">LIVING WITH NATURAL UPHOLSTERY</a></h3>
+                        <p>Wool, linen and cotton all wear differently. How to clean, rotate and repair upholstery so it
+                            ages well.</p>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card">
+                    <a href="blog-single.html">
+                        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80" alt="Blog 4">
+                    </a>
+                    <div class="blog-body">
+                        <span class="blog-date">28 JUNE 2026 · INTERIORS</span>
+                        <h3><a href="blog-single.html">STYLING A SMALL LIVING ROOM WITHOUT CLUTTER</a></h3>
+                        <p>Fewer, bigger pieces beat more, smaller ones. Here is how we lay out a compact room so it
+                            still feels generous.</p>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card">
+                    <a href="blog-single.html">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Blog 5">
+                    </a>
+                    <div class="blog-body">
+                        <span class="blog-date">15 JUNE 2026 · WORKSHOP</span>
+                        <h3><a href="blog-single.html">INSIDE THE WORKSHOP: HOW A FRAME COMES TOGETHER</a></h3>
+                        <p>From kiln-dried beech to hand-tied springs, a walk through every stage a Furn frame goes
+                            through before it ships.</p>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="blog-card">
+                    <a href="blog-single.html">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80" alt="Blog 6">
+                    </a>
+                    <div class="blog-body">
+                        <span class="blog-date">2 JUNE 2026 · GUIDES</span>
+                        <h3><a href="blog-single.html">CHOOSING THE RIGHT MATTRESS FOR YOUR BED</a></h3>
+                        <p>Firm, medium or soft? A short, honest guide to matching a mattress to how you actually sleep.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn"><i class="fa fa-angle-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-col">
+                <h3 class="footer-logo">FURN</h3>
+                <p>Furniture built to be lived with. Hardwood frames, natural upholstery and a price that makes sense,
+                    built in our own workshop.</p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SHOP</h4>
+                <a href="shop.html?c=sofa">Sofas</a>
+                <a href="shop.html?c=chair">Chairs</a>
+                <a href="shop.html?c=table">Tables</a>
+                <a href="shop.html?c=bed">Beds</a>
+                <a href="shop.html?c=lighting">Lighting</a>
+                <a href="shop.html?c=decor">Decor</a>
+            </div>
+            <div class="footer-col">
+                <h4>HELP</h4>
+                <a href="contact.html">Contact us</a>
+                <a href="#">Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Assembly</a>
+                <a href="#">Guarantee</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <h4>NEWSLETTER</h4>
+            <p>New pieces, restocks and the occasional workshop story.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Email address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

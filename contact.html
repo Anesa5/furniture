@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Furn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p>Free delivery on orders over $500</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-box">FU<br>RN</div>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="shop.html">Shop <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All furniture</a>
+                        <a href="shop.html?c=sofa">Sofas</a>
+                        <a href="shop.html?c=chair">Chairs</a>
+                        <a href="shop.html?c=table">Tables</a>
+                        <a href="shop.html?c=bed">Beds</a>
+                        <a href="shop.html?c=lighting">Lighting</a>
+                        <a href="shop.html?c=decor">Decor</a>
+                    </div>
+                </div>
+                <a href="product.html">Product</a>
+                <div class="nav-item dropdown">
+                    <a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">All posts</a>
+                        <a href="blog-single.html">Single post</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="header-icons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-bag"></i>
+                <i class="fa fa-bars" id="menuBtn"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <div class="shop-hero-overlay"></div>
+        <div class="container shop-hero-content">
+            <h1>CONTACT</h1>
+            <p>Home / Contact</p>
+        </div>
+    </section>
+
+    <!-- CONTACT MAIN -->
+    <section class="contact-main">
+        <div class="container contact-grid">
+
+            <!-- LEFT: FORM -->
+            <div class="contact-form-wrap">
+                <h2 class="contact-title">SEND US A MESSAGE</h2>
+                <form class="contact-form">
+                    <label>Name</label>
+                    <input type="text" placeholder="" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="" required>
+
+                    <label>Phone</label>
+                    <input type="tel" placeholder="">
+
+                    <label>Message</label>
+                    <textarea rows="6" required></textarea>
+
+                    <button type="submit" class="btn btn-orange">SEND MESSAGE</button>
+                </form>
+            </div>
+
+            <!-- RIGHT: SHOWROOM INFO -->
+            <div class="contact-info">
+                <h2 class="contact-title">SHOWROOM</h2>
+                <p class="info-block">
+                    118 Kiln Road<br>
+                    Manchester M4 6JN<br>
+                    United Kingdom
+                </p>
+                <p class="info-block">
+                    Monday to Saturday, 9am – 6pm<br>
+                    Sunday, 11am – 4pm
+                </p>
+                <p class="info-block">
+                    <a href="tel:+441610000000" class="orange-link">+44 161 000 0000</a><br>
+                    <a href="mailto:hello@furn.example" class="orange-link">hello@furn.example</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-col">
+                <h3 class="footer-logo">FURN</h3>
+                <p>Furniture built to be lived with. Hardwood frames, natural upholstery and a price that makes sense,
+                    built in our own workshop.</p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SHOP</h4>
+                <a href="shop.html?c=sofa">Sofas</a>
+                <a href="shop.html?c=chair">Chairs</a>
+                <a href="shop.html?c=table">Tables</a>
+                <a href="shop.html?c=bed">Beds</a>
+                <a href="shop.html?c=lighting">Lighting</a>
+                <a href="shop.html?c=decor">Decor</a>
+            </div>
+            <div class="footer-col">
+                <h4>HELP</h4>
+                <a href="contact.html">Contact us</a>
+                <a href="#">Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Assembly</a>
+                <a href="#">Guarantee</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <h4>NEWSLETTER</h4>
+            <p>New pieces, restocks and the occasional workshop story.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Email address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

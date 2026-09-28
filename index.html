@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furn - Furniture Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p>10 year guarantee on all solid wood frames</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-box">FU<br>RN</div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">Home</a>
+
+                <!-- SHOP DROPDOWN -->
+                <div class="nav-item dropdown">
+                    <a href="shop.html">Shop <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All furniture</a>
+                        <a href="shop.html?c=sofa">Sofas</a>
+                        <a href="shop.html?c=chair">Chairs</a>
+                        <a href="shop.html?c=table">Tables</a>
+                        <a href="shop.html?c=bed">Beds</a>
+                        <a href="shop.html?c=lighting">Lighting</a>
+                        <a href="shop.html?c=decor">Decor</a>
+                    </div>
+                </div>
+
+                <a href="product.html">Product</a>
+                <div class="nav-item dropdown">
+                    <a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">All posts</a>
+                        <a href="blog-single.html">Single post</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-icons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-bag"></i>
+                <i class="fa fa-bars" id="menuBtn"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-card">
+                <span class="sub-title">70% SALE OFF</span>
+                <h1>FURNITURE<br>AT COST</h1>
+                <p>Pieces built to be lived with — solid frames, honest materials and a price that makes sense.</p>
+                <a href="#" class="btn btn-orange">Discover more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR PRODUCTS -->
+    <section class="section popular-products">
+        <div class="container">
+            <h2 class="section-title">POPULAR PRODUCTS</h2>
+            <p class="section-sub">The pieces our customers come back for, across every room in the house.</p>
+
+            <div class="tabs">
+                <button class="tab active" data-cat="sofa">Sofa</button>
+                <button class="tab" data-cat="table">Table</button>
+                <button class="tab" data-cat="chair">Chair</button>
+                <button class="tab" data-cat="bed">Bed</button>
+                <button class="tab" data-cat="lighting">Lighting</button>
+                <button class="tab" data-cat="decor">Decor</button>
+            </div>
+
+            <div class="product-grid-3" id="popularGrid"></div>
+
+            <div class="center-btn">
+                <a href="#" class="btn btn-outline">VIEW ALL</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MANUFACTURER SECTION -->
+    <section class="manufacturer">
+        <div class="container manufacturer-inner">
+            <div class="man-img">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Manufacturer">
+            </div>
+            <div class="man-text">
+                <h2>MANUFACTURER</h2>
+                <p>We build in our own workshop, so nothing passes through a middleman. Hardwood frames, eight-way
+                    hand-tied springs and upholstery cut on site.</p>
+                <p>That is why a Furn sofa costs what it does, and why it lasts.</p>
+                <a href="#" class="btn btn-orange">DISCOVER MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS YOU MAY LIKE -->
+    <section class="section may-like">
+        <div class="container">
+            <h2 class="section-title">PRODUCTS YOU MAY LIKE</h2>
+            <p class="section-sub">Hand-picked pieces that sit well with what you have been looking at.</p>
+
+            <div class="center-btn" style="margin-bottom: 40px;">
+                <a href="#" class="btn btn-outline">VIEW ALL</a>
+            </div>
+
+            <div class="product-grid-4">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&q=80" alt="Bed">
+                    </div>
+                    <h4>Selby King Bed</h4>
+                    <p class="price">$1,320.00</p>
+                    <div class="colors"><span style="background:#d4c3b3"></span></div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&q=80" alt="Bed Frame">
+                    </div>
+                    <h4>Ashcombe Oak Bed Frame</h4>
+                    <p class="price">$860.00</p>
+                    <div class="colors"><span style="background:#8b5a2b"></span></div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=500&q=80" alt="Lamp">
+                        <span class="sale-badge">SALE</span>
+                        <button class="quick-add">QUICK ADD</button>
+                    </div>
+                    <h4>Norbury Tripod Floor Lamp</h4>
+                    <p class="price">$215.00</p>
+                    <div class="colors"><span style="background:#d4c3b3"></span></div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?w=500&q=80" alt="Lamp">
+                        <span class="sale-badge">SALE</span>
+                        <button class="quick-add">QUICK ADD</button>
+                    </div>
+                    <h4>Orrell Globe Table Lamp</h4>
+                    <p class="price"><span class="old-price">$175.00</span> $145.00</p>
+                    <div class="colors"><span style="background:#c49b3b"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP BY ROOM -->
+    <section class="section shop-room">
+        <div class="container">
+            <h2 class="section-title">SHOP BY ROOM</h2>
+            <div class="room-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&q=80" alt="Sofas">
+                    <div class="room-info">
+                        <span>Sofas</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=500&q=80" alt="Chairs">
+                    <div class="room-info">
+                        <span>Chairs</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=500&q=80" alt="Tables">
+                    <div class="room-info">
+                        <span>Tables</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&q=80" alt="Beds">
+                    <div class="room-info">
+                        <span>Beds</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY BUY FROM FURN -->
+    <section class="why-buy">
+        <div class="container why-grid">
+            <div class="why-card">
+                <i class="fa fa-truck"></i>
+                <h3>FREE DELIVERY</h3>
+                <p>On every order over $500, to your room of choice.</p>
+            </div>
+            <div class="why-card">
+                <i class="fa fa-shield-alt"></i>
+                <h3>10 YEAR FRAME GUARANTEE</h3>
+                <p>Solid hardwood, guaranteed for a decade.</p>
+            </div>
+            <div class="why-card">
+                <i class="fa fa-moon"></i>
+                <h3>100 NIGHT TRIAL</h3>
+                <p>Live with it. If it is not right, we collect it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="section blog">
+        <div class="container">
+            <h2 class="section-title">FROM THE WORKSHOP</h2>
+            <div class="center-btn" style="margin-bottom: 40px;">
+                <a href="#" class="btn btn-outline">ALL POSTS</a>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80" alt="Blog 1">
+                    <div class="blog-body">
+                        <span class="blog-date">14 AUGUST 2026 · GUIDES</span>
+                        <h3>HOW TO MEASURE A ROOM BEFORE YOU BUY A SOFA</h3>
+                        <p>Doorways, turning circles and the 60cm nobody accounts for. Measure once like this and the
+                            delivery day gets a lot calmer.</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=600&q=80" alt="Blog 2">
+                    <div class="blog-body">
+                        <span class="blog-date">31 JULY 2026 · MATERIALS</span>
+                        <h3>SOLID WOOD VERSUS VENEER, AND WHEN EACH IS THE RIGHT CALL</h3>
+                        <p>Veneer is not a shortcut and solid wood is not always better. What actually changes across a
+                            decade of use.</p>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=600&q=80" alt="Blog 3">
+                    <div class="blog-body">
+                        <span class="blog-date">12 JULY 2026 · CARE</span>
+                        <h3>LIVING WITH NATURAL UPHOLSTERY</h3>
+                        <p>Wool, linen and cotton all wear differently. How to clean, rotate and repair upholstery so it
+                            ages well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-col">
+                <h3 class="footer-logo">FURN</h3>
+                <p>Furniture built to be lived with. Hardwood frames, natural upholstery and a price that makes sense,
+                    built in our own workshop.</p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SHOP</h4>
+                <a href="#">Sofas</a>
+                <a href="#">Chairs</a>
+                <a href="#">Tables</a>
+                <a href="#">Beds</a>
+                <a href="#">Lighting</a>
+                <a href="#">Decor</a>
+            </div>
+            <div class="footer-col">
+                <h4>HELP</h4>
+                <a href="#">Contact us</a>
+                <a href="#">Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Assembly</a>
+                <a href="#">Guarantee</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <h4>NEWSLETTER</h4>
+            <p>New pieces, restocks and the occasional workshop story.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Email address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

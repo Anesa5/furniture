@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halland Velvet 3-Seat Sofa - Furn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <p>10 year guarantee on all solid wood frames</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-box">FU<br>RN</div>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+
+                <!-- SHOP DROPDOWN -->
+                <div class="nav-item dropdown">
+                    <a href="shop.html">Shop <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="shop.html">All furniture</a>
+                        <a href="shop.html?c=sofa">Sofas</a>
+                        <a href="shop.html?c=chair">Chairs</a>
+                        <a href="shop.html?c=table">Tables</a>
+                        <a href="shop.html?c=bed">Beds</a>
+                        <a href="shop.html?c=lighting">Lighting</a>
+                        <a href="shop.html?c=decor">Decor</a>
+                    </div>
+                </div>
+
+                <a href="product.html" class="active">Product</a>
+
+                <!-- BLOG DROPDOWN -->
+                <div class="nav-item dropdown">
+                    <a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">All posts</a>
+                        <a href="blog-single.html">Single post</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-icons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-bag"></i>
+                <i class="fa fa-bars" id="menuBtn"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- PRODUCT HERO -->
+    <section class="product-hero">
+        <div class="shop-hero-overlay"></div>
+        <div class="container shop-hero-content">
+            <h1>PRODUCT DETAILS</h1>
+            <p>Home / Shop / Product details</p>
+        </div>
+    </section>
+
+    <!-- PRODUCT MAIN SECTION -->
+    <section class="product-main">
+        <div class="container product-inner">
+
+            <!-- LEFT: IMAGE GALLERY -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80"
+                        alt="Halland Velvet Sofa">
+                </div>
+                <div class="thumbnails">
+                    <img class="thumb active" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&q=80"
+                        alt="Thumb 1">
+                    <img class="thumb" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=300&q=80"
+                        alt="Thumb 2">
+                    <img class="thumb" src="https://images.unsplash.com/photo-1550254478-ead40cc54513?w=300&q=80"
+                        alt="Thumb 3">
+                </div>
+            </div>
+
+            <!-- RIGHT: PRODUCT DETAILS -->
+            <div class="product-info">
+                <span class="product-cat">SOFAS</span>
+                <h1 class="product-title">HALLAND VELVET 3-SEAT SOFA</h1>
+                <p class="product-price">$1,290.00</p>
+                <p class="tax-note">Taxes included. Delivery calculated at checkout.</p>
+
+                <!-- FINISH -->
+                <div class="option-group">
+                    <div class="option-header">
+                        <span class="option-label">FINISH</span>
+                        <span class="option-value" id="finishLabel">Forest</span>
+                    </div>
+                    <div class="finish-options">
+                        <span class="finish-dot active" data-name="Forest" style="background:#1e4a3b"></span>
+                        <span class="finish-dot" data-name="Sand" style="background:#c49b3b"></span>
+                        <span class="finish-dot" data-name="Charcoal" style="background:#2a2a2a"></span>
+                    </div>
+                </div>
+
+                <!-- SIZE -->
+                <div class="option-group">
+                    <div class="option-header">
+                        <span class="option-label">SIZE</span>
+                        <span class="option-value" id="sizeLabel">2 seat</span>
+                    </div>
+                    <div class="size-options">
+                        <button class="size-btn active" data-size="2 seat">2 seat</button>
+                        <button class="size-btn" data-size="3 seat">3 seat</button>
+                        <button class="size-btn" data-size="4 seat">4 seat</button>
+                    </div>
+                </div>
+
+                <!-- QUANTITY -->
+                <div class="option-group">
+                    <span class="option-label">QUANTITY</span>
+                    <div class="qty-box">
+                        <button id="qtyMinus">−</button>
+                        <input type="text" id="qtyInput" value="1" readonly>
+                        <button id="qtyPlus">+</button>
+                    </div>
+                </div>
+
+                <!-- ADD TO CART -->
+                <button class="btn btn-orange add-to-cart-btn" id="addToCartBtn">ADD TO CART</button>
+
+                <!-- STOCK -->
+                <p class="stock-info"><span class="stock-dot"></span> In stock — delivered in 2 to 3 weeks</p>
+
+                <!-- DESCRIPTION -->
+                <p class="product-desc">
+                    A kiln-dried hardwood frame, eight-way hand-tied springs and a seat cushion wrapped in feather and
+                    down. Built in our own workshop and finished by hand.
+                </p>
+
+                <!-- ACCORDIONS -->
+                <div class="accordion">
+                    <div class="acc-item">
+                        <div class="acc-head">
+                            <span>DIMENSIONS AND MATERIALS</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="acc-body">
+                            <p>Width 220cm, Depth 95cm, Height 85cm. Solid beech frame, velvet upholstery (100%
+                                polyester), foam and feather cushion filling.</p>
+                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div class="acc-head">
+                            <span>DELIVERY AND RETURNS</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="acc-body">
+                            <p>Free delivery on orders over $500. Delivered in 2-3 weeks to your room of choice.
+                                100-night trial — if it isn't right, we'll collect it free of charge.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- YOU MAY ALSO LIKE -->
+    <section class="section may-like">
+        <div class="container">
+            <h2 class="section-title">YOU MAY ALSO LIKE</h2>
+
+            <div class="product-grid-4">
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=500&q=80"
+                            alt="Bramley Sofa">
+                        <span class="sale-badge">SALE</span>
+                    </div>
+                    <h4>Bramley Tufted Sofa</h4>
+                    <p class="price"><span class="old-price">$1,150.00</span> $980.00</p>
+                    <div class="colors"><span style="background:#d4c3b3"></span></div>
+                </div>
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1550254478-ead40cc54513?w=500&q=80"
+                            alt="Ardal Sofa">
+                    </div>
+                    <h4>Ardal Leather Sofa</h4>
+                    <p class="price">$1,690.00</p>
+                    <div class="colors"><span style="background:#8b5a2b"></span></div>
+                </div>
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=500&q=80"
+                            alt="Kettle Chair">
+                    </div>
+                    <h4>Kettle Swivel Chair</h4>
+                    <p class="price">$420.00</p>
+                    <div class="colors"><span style="background:#d4c3b3"></span></div>
+                </div>
+                <div class="product-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&q=80"
+                            alt="Marlow Chair">
+                        <span class="sale-badge">SALE</span>
+                    </div>
+                    <h4>Marlow Accent Chair</h4>
+                    <p class="price"><span class="old-price">$420.00</span> $365.00</p>
+                    <div class="colors"><span style="background:#fff; border:1px solid #ddd"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-col">
+                <h3 class="footer-logo">FURN</h3>
+                <p>Furniture built to be lived with. Hardwood frames, natural upholstery and a price that makes sense,
+                    built in our own workshop.</p>
+                <div class="socials">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SHOP</h4>
+                <a href="shop.html?c=sofa">Sofas</a>
+                <a href="shop.html?c=chair">Chairs</a>
+                <a href="shop.html?c=table">Tables</a>
+                <a href="shop.html?c=bed">Beds</a>
+                <a href="shop.html?c=lighting">Lighting</a>
+                <a href="shop.html?c=decor">Decor</a>
+            </div>
+            <div class="footer-col">
+                <h4>HELP</h4>
+                <a href="contact.html">Contact us</a>
+                <a href="#">Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Assembly</a>
+                <a href="#">Guarantee</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <h4>NEWSLETTER</h4>
+            <p>New pieces, restocks and the occasional workshop story.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Email address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
